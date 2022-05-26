@@ -1,0 +1,191 @@
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #1f2125;
+}
+
+/* nav bar css */
+.container-fluid {
+  border-bottom: 2px solid #454952;
+}
+.navbar-toggler-icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+
+.navbar-toggler {
+  border: none;
+  padding: 0;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.nav-link {
+  font-size: 1rem;
+  color: white;
+}
+
+.nav-link:hover {
+  color: red;
+}
+
+/* title section */
+.title-container {
+  background-image: url("../Images/me2.jpg");
+  background-repeat: no-repeat;
+  background-position: center 10%;
+  background-size: cover;
+  padding: 0 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+.center-title {
+  display: block;
+}
+
+.title {
+  font-size: 7rem;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 3rem;
+  color: #60a3e6;
+}
+
+/* content section */
+.project-container {
+  display: flex;
+  width: 80%;
+  margin: auto auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.project-title {
+  color: white;
+  padding: 50px 12px 0 12px;
+  margin: 0;
+  text-align: center;
+  font-size: 3rem;
+}
+.project {
+  font-size: 2rem;
+  color: white;
+  border: 3px solid white;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+hr {
+  opacity: 100%;
+  width: 90%;
+  margin: auto auto;
+  margin-top: 50px;
+  border: 2px solid white;
+}
+
+/* about me */
+.about-container {
+  padding: 0 20px;
+}
+.about-titles {
+  color: #60a3e6;
+  font-size: 2.5rem;
+  padding-top: 2%;
+}
+.about-container p {
+  color: white;
+  font-size: 1.5rem;
+}
+
+/* coding table */
+table {
+  background-color: #2b2e33;
+  margin-top: 50px;
+}
+caption {
+  color: white;
+  font-size: 2rem;
+  caption-side: top;
+  padding: 1%;
+  background-color: #2b2e33;
+  text-align: center;
+
+}
+th {
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  border-right: 2px solid white;
+  width: 15%;
+}
+td {
+  color: white;
+  height: 3rem;
+}
+td:nth-child(1) {
+  width: 15%;
+  padding: 1%;
+  border-right: 2px solid white;
+}
+.table-color {
+  display: flex;
+  background-image: linear-gradient(to right, #76afe8, #60a3e6);
+  height: 100%;
+  border-radius: 20px;
+  margin-left: 1%;
+}
+
+@media screen and (max-width: 480px) {
+  .title {
+    font-size: 4rem;
+  }
+  .subtitle {
+    font-size: 2rem;
+  }
+  .project {
+    font-size: 2rem;
+    color: white;
+    border: 3px solid white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+  .about-container p {
+    font-size: 1rem;
+  }
+  .about-titles {
+    font-size: 1.5rem;
+  }
+  table {
+    width: 100%;
+  }
+  caption {
+    font-size: .8rem;
+  }
+  th {
+    font-size: .6rem;
+  }
+  tbody {
+    font-size: .5rem;
+  }
+  td {
+    height: 1.1rem;
+  }
+}
