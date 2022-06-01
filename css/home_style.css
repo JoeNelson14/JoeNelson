@@ -68,32 +68,31 @@ body {
   width: 80%;
   margin: auto auto;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
 }
 .project-title {
-  color: white;
+  color: #60a3e6;
   padding: 50px 12px 0 12px;
   margin: 0;
   text-align: center;
   font-size: 3rem;
 }
 .project {
-  font-size: 2rem;
   color: white;
-  border: 3px solid white;
-  width: 300px;
-  height: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 50px;
+  text-decoration: none;
+  font-size: 2rem;
+  text-align: center;
+  padding: 5% 5%;
+}
+.project p {
+  margin: 0;
 }
 
 hr {
   opacity: 100%;
   width: 90%;
   margin: auto auto;
-  margin-top: 50px;
   border: 2px solid white;
 }
 
@@ -120,7 +119,7 @@ table {
   margin: 5% auto;
 }
 caption {
-  color: white;
+  color: #60a3e6;
   font-size: 2rem;
   caption-side: top;
   padding: 1%;
@@ -189,15 +188,11 @@ td:nth-child(1) {
   .subtitle {
     font-size: 2rem;
   }
-  .project {
-    font-size: 2rem;
-    color: white;
-    border: 3px solid white;
-    width: 100%;
-    display: flex;
+  .project-container {
     justify-content: center;
-    align-items: center;
-    margin-top: 50px;
+  }
+  .project {
+    font-size: 1.8rem;
   }
   .about-container p {
     font-size: 1rem;
