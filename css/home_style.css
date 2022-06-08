@@ -1,35 +1,104 @@
-
 body {
   padding: 0;
   margin: 0;
   background-color: #1f2125;
 }
 
-/* nav bar css */
-.container-fluid {
-  border-bottom: 2px solid #454952;
-}
-.navbar-toggler-icon {
-  width: 2rem;
-  height: 2rem;
+nav, body {
+  font-family: 'Signika', sans-serif;
 }
 
-.navbar-toggler {
-  border: none;
+h1, h2, h3, h4 {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+#checkbox {
+  display: none;
+}
+
+#navbar {
+  height: 50px;
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+  background-color: #1f2125;
+}
+
+#checkbox:checked~#navbar {
+  height: 100%;
+  background: #1f2125;
+}
+
+#checkbox:checked~#navbar .crust-top {
+  transform: rotateZ(45deg);
+}
+
+#checkbox:checked~#navbar .crust-bottom {
+  transform: rotateZ(-45deg);
+}
+
+#checkbox:checked~#navbar .navbar-list {
+  visibility: visible;
+}
+
+.global-item {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+}
+
+.global-item .nav-content {
   padding: 0;
+  margin: 0;
 }
 
-.navbar-toggler:focus {
-  box-shadow: none;
+.menuicon {
+  top: 0;
+  left: 0;
 }
 
-.nav-link {
-  font-size: 1rem;
+.crust-block {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 9px;
+  top: 9px;
+}
+
+.crust {
+  display: block;
+  position: absolute;
+  width: 17px;
+  height: 1px;
+  background: #fff;
+  left: 8px;
+  border-radius: 0.5px;
+}
+
+.crust-top {
+  transform: translateY(-3px) scaleX(.88235);
+  top: 14px;
+}
+
+.crust-bottom {
+  transform: translateY(3px) scaleX(.88235);
+  bottom: 14px;
+}
+
+.navbar-list {
+  visibility: hidden;
+  display: block;
+  position: absolute;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  top: 50px;
+  /* transition: visibility 0s linear 1s; */
+}
+
+.navbar-listitem {
   color: white;
-}
-
-.nav-link:hover {
-  color: red;
+  font-size: 2rem;
 }
 
 /* title section */
@@ -71,6 +140,7 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .project-title {
   color: #60a3e6;
   padding: 50px 12px 0 12px;
@@ -78,6 +148,7 @@ body {
   text-align: center;
   font-size: 3rem;
 }
+
 .project {
   color: white;
   text-decoration: none;
@@ -85,12 +156,13 @@ body {
   text-align: center;
   padding: 5% 5%;
 }
+
 .project p {
   margin: 0;
 }
 
 hr {
-  opacity: 100%;
+  opacity: 100;
   width: 90%;
   margin: auto auto;
   border: 2px solid white;
@@ -100,12 +172,14 @@ hr {
 .about-container {
   padding: 0 20px;
 }
+
 .about-titles {
   color: #60a3e6;
   font-size: 2.5rem;
   padding-top: 10%;
   margin: 0;
 }
+
 .about-container p {
   color: white;
   font-size: 1.5rem;
@@ -118,6 +192,7 @@ table {
   background-color: #2b2e33;
   margin: 5% auto;
 }
+
 caption {
   color: #60a3e6;
   font-size: 2rem;
@@ -125,8 +200,8 @@ caption {
   padding: 1%;
   background-color: #2b2e33;
   text-align: center;
-
 }
+
 th {
   color: white;
   text-align: center;
@@ -134,15 +209,18 @@ th {
   border-right: 2px solid white;
   width: 15%;
 }
+
 td {
   color: white;
   height: 3rem;
 }
+
 td:nth-child(1) {
   width: 15%;
   padding: 1%;
   border-right: 2px solid white;
 }
+
 .table-color {
   display: flex;
   background-image: linear-gradient(to right, #76afe8, #60a3e6);
@@ -160,6 +238,7 @@ td:nth-child(1) {
   flex-direction: column;
   color: white;
 }
+
 .footer-link-container {
   display: flex;
   justify-content: center;
@@ -167,63 +246,79 @@ td:nth-child(1) {
   width: 100%;
   padding-bottom: 5%;
 }
+
 .footer-title {
   padding: 3% 0;
   color: #60a3e6;
 }
+
 .footer-logo {
   height: 25px;
   padding: 0 15px;
 }
+
 .footer-link-container p {
   padding: 0;
   margin: 0;
-
 }
 
 @media screen and (max-width: 480px) {
   .title {
     font-size: 4rem;
   }
+
   .subtitle {
     font-size: 2rem;
   }
+
   .project-container {
     justify-content: center;
   }
+
   .project {
     font-size: 1.8rem;
   }
+
   .about-container p {
     font-size: 1rem;
   }
+
   .about-titles {
     font-size: 1.5rem;
   }
+
   table {
     width: 100%;
   }
+
   caption {
     font-size: .8rem;
   }
+
   th {
     font-size: .6rem;
   }
+
   tbody {
     font-size: .5rem;
   }
+
   td {
     height: 1.6rem;
   }
+
   .footer-title {
     font-size: 1rem;
   }
+
   .footer-logo {
     height: 15px;
   }
+
   .footer-link-container p {
     font-size: .7rem;
   }
+
   small {
     font-size: .5rem;
   }
