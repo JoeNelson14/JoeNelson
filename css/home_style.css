@@ -1,7 +1,7 @@
 body {
   padding: 0;
   margin: 0;
-  background-color: #1f2125;
+  background-color: #000;
 }
 
 nav, body {
@@ -26,6 +26,7 @@ h1, h2, h3, h4 {
   backdrop-filter: blur(20px);
   box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
   border: 1px solid rgba(0, 0, 0, 0.3);
+  transition: height .5s ease-out;
 }
 
 #checkbox:checked~#navbar {
@@ -35,6 +36,7 @@ h1, h2, h3, h4 {
   backdrop-filter: blur(20px);
   box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
   border: 1px solid rgba(0, 0, 0, 0.3);
+  transition: height .5s ease-in;
 }
 
 #checkbox:checked~#navbar .crust-top {
@@ -47,6 +49,7 @@ h1, h2, h3, h4 {
 
 #checkbox:checked~#navbar .navbar-list {
   visibility: visible;
+  transition: visibility 0s linear .55s;
 }
 .navbar-box {
   width: 100%;
@@ -109,7 +112,6 @@ h1, h2, h3, h4 {
   margin: 0;
   padding: 0;
   top: 50px;
-  /* transition: visibility 0s linear 1s; */
 }
 
 .navbar-list-item {
