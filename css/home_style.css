@@ -62,6 +62,8 @@ h1, h2, h3, h4 {
   position: absolute;
   padding: 0;
   margin: 0;
+  top: 0;
+  list-style-type: none;
 }
 
 .nav-content {
@@ -72,8 +74,18 @@ h1, h2, h3, h4 {
 }
 
 .menuicon {
-  top: 0;
   left: 0;
+}
+
+.logo-item {
+  left: 47%;
+}
+
+.logoicon {
+  position: absolute;
+  top: 10px;
+  width: 30px;
+  height: 30px;
 }
 
 .crust-block {
@@ -122,6 +134,9 @@ h1, h2, h3, h4 {
   color: white;
   font-size: 1rem;
   text-decoration: none;
+}
+.navbar-list-link:active ~ #navbar {
+  height: 50px;
 }
 
 .list-line {
