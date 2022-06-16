@@ -158,7 +158,7 @@ h1, h2, h3, h4 {
 
 /* title section */
 .title-container {
-  background-image: url("../Images/me2.jpg");
+  background-image: url("../Images/me_banner.webp");
   background-repeat: no-repeat;
   background-position: center 10%;
   background-size: cover;
@@ -187,42 +187,31 @@ h1, h2, h3, h4 {
   color: #60a3e6;
 }
 
-/* content section */
+/* project section */
 .project-container {
-  display: flex;
   width: 100%;
-  margin: auto auto;
-  flex-wrap: wrap;
+  display: flex;
   justify-content: center;
   align-items: center;
-  background: #383838;
+  flex-direction: column;
+  background: #60a3e6;
 }
 
 .project-title {
-  color: #60a3e6;
-  padding: 50px 12px 0 12px;
-  margin: 0;
-  text-align: center;
+  color: #fff;
   font-size: 3rem;
 }
 
-.project {
-  color: white;
-  text-decoration: none;
-  font-size: 2rem;
-  text-align: center;
-  padding: 5% 5%;
+.project-image-container {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  padding-bottom: 5%;
+  flex-wrap: wrap;
 }
 
-.project p {
-  margin: 0;
-}
-
-hr {
-  opacity: 100;
-  width: 90%;
-  margin: auto auto;
-  border: 2px solid white;
+.project-images {
+  width: 250px;
 }
 
 /* about me */
@@ -319,6 +308,10 @@ td:nth-child(1) {
   margin: 0;
 }
 
+small {
+  padding-bottom: 2%;
+}
+
 @media screen and (max-width: 480px) {
   .title {
     font-size: 4rem;
@@ -328,12 +321,19 @@ td:nth-child(1) {
     font-size: 2rem;
   }
 
-  .project-container {
-    justify-content: center;
+  .project-title {
+    padding-top: 5%;
+    margin: 0;
   }
 
-  .project {
-    font-size: 1.8rem;
+  .project-image-container {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .project-images {
+    padding: 30px 0;
   }
 
   .about-container p {
